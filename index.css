@@ -1,0 +1,514 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+padding: 0;
+background-color: antiquewhite;
+font-family: "Playfair Display","Poppins",Arial, Helvetica, sans-serif;
+}
+
+
+#navbar {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 10px -5px rgba(0,0,0, 0.1);
+
+}
+
+#navbar ul{
+
+display: flex;
+margin: 10px 0 10px auto;
+width: 55%;
+justify-content: space-evenly;
+list-style: none;
+}
+
+#navbar ul li a{
+margin-left: 3px;
+color: black;
+opacity: 0.7;
+font-size: 1.2rem;
+font-family: "Playfair Display","Poppins",Arial, Helvetica, sans-serif;
+text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+
+    color: red;
+    opacity: 1.0;
+    font-size: 1.3rem;
+    transition: all 0.15s;
+}
+
+
+#intro-section{
+width: 100vw;
+height: 50vh;
+background-image: url("Header1.png");
+background-size: cover;
+border: solid rgb(235, 232, 232) 4px;
+box-shadow: 5px rgb(0, 0, 0,0.5);
+}
+
+
+#welcome-section{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+
+}
+
+.message{
+    display: flex;
+    margin: 20px;
+    width: 500px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.message p{
+    font-size: 2.7vw;
+    font-family: "Playfair Display",Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#welcome-section, .message img{
+    width: 100%;
+}
+
+section {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.section-heading{
+font-size: 2rem;
+text-align: center;
+}
+
+
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+
+div.my-information{
+display: block;
+font-size: 1.2rem;
+text-align: left;
+}
+
+#my-information{
+display: block;
+font-size: 1vw;
+text-align: left;
+}
+
+#skills-section{
+background-color: black;
+color: azure;
+justify-content: center;
+text-align: center;
+}
+
+.skills-container{
+display: flex;
+flex-wrap: wrap;
+width: 80%;
+margin: auto;
+justify-content: center;
+}
+
+.skill-information{
+    padding: 2rem;
+    text-align: center;
+}
+
+.skill-name{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.skill-information progress{
+    background-color: white;
+    border: 1px solid white;
+}
+.skill-information progress::-webkit-progress-value{
+    background-color: white;
+    border-radius: 0;
+}
+
+.projects-section h1{
+    font-size: 1.5rem;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+}
+.projects-container .image-box{
+    margin: 5px;
+}
+
+.image-box a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.image-box a img{
+    width: 40vw;
+}
+
+.image-box a img:hover{
+    width: 40vw;
+    border: 3px solid rgb(62, 0, 0);
+}
+
+#contact-section{
+
+    margin-top: 50px;
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+#contact-section a{
+   margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+@media (min-width: 140px) {
+    #intro-section {
+        width: 100vw;
+        height: 50vw; 
+        background-size: cover;
+    }
+}
+@media (min-width: 340px) {
+    #intro-section {
+        width: 100vw;
+        height: 50vw; 
+        background-size: cover;
+    }
+    #navbar ul li a{
+        font-size: 0.75rem;
+        }
+}
+
+@media (min-width: 360px) {
+    #intro-section {
+        width: 100vw;
+        height: 50vw; 
+        background-size: cover;
+    }
+    #navbar ul li a{
+        font-size: 0.75rem;
+        }
+}
+@media (min-width: 380px) {
+    #intro-section {
+        width: 100vw;
+        height: 55vw; 
+        background-size: cover;
+    }
+}
+
+
+
+@media (min-width: 590px) {
+    #intro-section {
+        width: 100vw;
+        height: 60vw; 
+        background-size: cover;
+    }
+
+    #navbar ul li a{
+        font-size: 1.2rem;
+        }
+}
+@media (min-width: 700px) {
+    #intro-section {
+        width: 100vw;
+        height: 70vw; 
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    #intro-section {
+        width: 100vw;
+        height: 50vw; 
+        background-size: cover;
+    }
+    #navbar ul li a{
+        font-size: 1.2rem;
+        }
+}
+@media (min-width: 800px) {
+    #intro-section {
+        width: 100vw;
+        height: 50vw; 
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1000px) {
+    #intro-section {
+        max-width: 100vw;
+        height: 50vw; 
+        background-size:cover;
+    }
+}
+
+
+/*
+@media (min-width: 750px) and (min-height:1334px) {
+    #intro-section {
+        width: 100vw;
+        height: 28vh; 
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1334px) and (min-height:750px) {
+    #intro-section {
+        width: 100vw;
+        height: 80vh; 
+        background-size: cover;
+    }
+    #welcome-section{
+        justify-content: space-evenly;
+    }
+}
+    */
+
+
+@media (min-width: 1792px) and (min-height:828px) {
+    #intro-section {
+        width: 100vw;
+        height: 95vh; 
+        background-size: cover;
+    }
+
+    #welcome-section{
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 828px) and (min-height:1792px) {
+    #intro-section {
+        width: 100vw;
+        height: 20vh; 
+        background-size: cover;
+    }
+
+    #welcome-section{
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 2532px) and (min-height:1170px) {
+    #intro-section {
+        width: 100vw;
+        height: 95vh; 
+        background-size: cover;
+    }
+
+    #welcome-section{
+        justify-content:space-around;
+    }
+    #welcome-section #message p{
+        font-size: 5vw;
+    }
+    #welcome-section img{
+        width: 50vw;
+    }
+
+    #about-section .about-container .my-information p {
+        font-size: 40px;     
+    } 
+    #about-section .about-container img{
+        width: 550px;
+    }
+
+
+}
+
+
+@media (min-width: 1170px) and (min-height:2532px) {
+    #intro-section {
+        width: 100vw;
+        height: 25vh; 
+        background-size: cover;
+    }
+
+    #welcome-section{
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width: 2400px) and (min-height:1080px) {
+    #intro-section {
+        width: 100vw;
+        height: 95vh; 
+        background-size: cover;
+    }
+
+    #welcome-section{
+        justify-content: space-evenly;
+    }
+    #welcome-section img{
+        width: 50vw;
+    }
+
+    #about-section{
+        justify-content: space-evenly;
+    }
+
+    #about-section .about-container .my-information p {
+        font-size: 40px;     
+    } 
+    #about-section .about-container img{
+        width: 550px;
+    }
+
+
+}
+
+@media (min-width: 1080px) and (min-height:2340px) {
+    #intro-section {
+        width: 100vw;
+        height: 20vh; 
+        background-size: cover;
+    }
+}
+
+
+@media (min-width: 2340px) and (min-height:1080px) {
+    #intro-section {
+        width: 100vw;
+        height: 90vh; 
+        background-size: cover;
+    }
+    #welcome-section .message p{
+        font-size: 3vw;
+    }
+
+    #welcome-section .message img{
+        width: 50vw;
+    }
+
+    #about-section .about-container .my-information p {
+        font-size: 40px;     
+    } 
+    #about-section .about-container img{
+        width: 1000px;
+    }
+
+    #about-section h1{
+        font-size: 80px;
+    }
+
+    .about-container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 3088px) and (min-height:1440px) {
+    #intro-section {
+        width: 100vw;
+        height: 90vh; 
+        background-size: cover;
+    }
+    #welcome-section{
+
+        justify-content: space-evenly;
+    }
+    #welcome-section .message p{
+        font-size: 3vw;
+    }
+
+    #welcome-section .message img{
+        width: 50vw;
+    }
+
+    #about-section .about-container .my-information p {
+        font-size: 40px;     
+    } 
+    #about-section .about-container img{
+        width: 1000px;
+    }
+
+    #about-section h1{
+        font-size: 80px;
+    }
+
+    .about-container{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 3088px) and (min-height:1440px) {
+    #intro-section {
+        width: 100vw;
+        height: 95vh; 
+        background-size: cover;
+    }
+
+
+    #welcome-section{
+        justify-content: space-evenly;
+    }
+}
+
+/*
+@media (min-width: 600px) and (min-height:1000px) {
+    #intro-section {
+        width: 100vw;
+        height: 30vh; 
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1000px) and (min-height:600px) {
+    #intro-section {
+        width: 100vw;
+        height: 90vh; 
+        background-size: cover;
+    }
+}
+*/
+
+

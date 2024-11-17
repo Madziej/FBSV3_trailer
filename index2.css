@@ -1,0 +1,265 @@
+body{
+    background-image: url('Space mono2.png');
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+        }
+
+    *{
+        box-sizing: border-box;
+    }
+    
+
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #333;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.4);
+    
+    }
+
+    
+    .navbar div{
+    margin-top:10px;
+    }
+    
+    
+    
+    .navbar-brand .logo {
+    width: 10vw;
+    margin-right: 10px;
+    }
+    
+    .navbar-links {
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    }
+    
+    .navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2vw;
+    transition: color 0.5s ease;
+    }
+    
+    .navbar a:hover{
+    color: red;
+    }
+    
+    .navbar-search input{
+    
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1rem;
+        border: none;
+    }
+
+    .navbar-search img {
+        width: 10vw;
+        margin-right: 10px;
+        }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column{
+        min-width: 120px;
+        background: silver;
+        border: 2px solid darkgray;
+    }
+
+    .middle-column{
+        flex-grow: 1;
+        text-align: left;
+        padding: 0 20px;
+        background-color: rgb(222, 214, 235);
+    }
+
+    .right-column{
+        display: none;
+    }
+
+
+    .container .middle-column article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: "Playfair Display",Arial, Helvetica, sans-serif;
+    }
+
+
+    .container .middle-column article img{
+
+        
+        display: flex;
+        width: 50vw;
+        margin-left: 20vw;
+        margin-right: 10vw;
+        border: solid black 2px;
+        
+
+    }
+
+    .left-column{
+        overflow: hidden;
+        
+        
+       
+    }
+
+    .right-column{
+        overflow: hidden;
+        
+        
+    }
+
+
+
+    .left-column img{
+        background-size: cover;
+        max-height: 100%;
+        
+    }
+
+    .right-column img{
+        background-size: cover;
+       
+    }
+
+@media(max-width:700px){
+
+    .navbar a{
+    font-size: 1.8rem;
+    }
+}
+@media(min-height:1024px){
+
+    .container .middle-column article img{
+
+        margin-top:50px;
+    }
+
+
+}
+
+@media (max-width:767px){
+    .left-column{
+        display: none;
+    }
+    .navbar-search img {
+        display: none;
+        }
+}
+
+    @media (min-width: 768px){
+
+        .navbar{
+            flex-direction: row;
+        }
+
+        .navbar div{
+            margin-top: 0;
+        }
+
+        .navbar-links{
+            flex-direction: row;
+        }
+
+        .container{
+            flex-direction: row;
+        }
+
+        .container .middle-column article img{
+
+            display: flex;
+            width: 50vw;
+            margin-left: 15vw;
+    
+        }
+    }
+
+
+    @media(min-width:992px){
+        .right-column{
+            display: block;
+        }
+        .container .middle-column article img{
+
+            display: flex;
+            width: 50vw;
+            margin-left: 11vw;
+    
+        }
+    }
+
+    @media(min-width:1200px){
+        .column{
+            min-width: 150px;
+        }
+
+    }
+
+    .footer{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-columns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 20px;
+    }
+
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title{
+        border-bottom: 2px solid red;
+        margin-bottom: 10px;
+    }
+
+    .footer-section a, .footer-section p{
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    .footer-socials img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-section a:hover{
+
+        color: red;
+    }
+
+    .footer-socials{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gallery img:hover {
+        border: solid red 12px;
+    }
+ 
